@@ -33,3 +33,21 @@ npm i express
 ```
 
 3. Creamos un .gitignore
+
+## Crear servidor
+
+1. Creamos un hola mundo
+2. Añadimos `better.sqlite3`
+
+3. Lo integramos en nuestro server
+```js
+//obtenemos la ruta absoluta a init.sql
+const initSqlPath = path.join(__dirname, 'init.sql')
+//leemos el archivo init.sql
+const initSql = fs.readFileSync(initSqlPath, 'utf8') // utf8 caracteres de europa
+//ejecutamos el contenido de init.spl
+db.exec(initSql)
+
+//exec solo funciona para querys que "NO" devuelven datos 
+//y para consultas 
+```

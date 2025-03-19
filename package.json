@@ -4,6 +4,7 @@
   "description": "## Inicializar el repositorio",
   "main": "index.js",
   "scripts": {
+    "dev": "rm database.db; node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Israa0000/backend#readme",
   "dependencies": {
+    "better-sqlite3": "^11.9.1",
     "express": "^4.21.2"
   }
 }
